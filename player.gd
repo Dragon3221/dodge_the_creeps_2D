@@ -40,7 +40,7 @@ func _process(delta: float):
 		$AnimatedSprite2D.flip_v = velocity.y > 0
 
 
-func _on_body_entered(body: Node2D):
+func _on_body_entered(_body: Node2D):
 	hide()
 	hit.emit()
 	$CollisionShape2D.set_deferred("disabled",true)
